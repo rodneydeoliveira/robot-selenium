@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220918 15:48:59.009" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="C:\Users\rodne\Desktop\Cursos\robot-selenium\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas" line="5">
+<kw name="Welcome" library="app">
+<var>${result}</var>
+<arg>Rodney</arg>
+<msg timestamp="20220918 15:48:59.040" level="INFO">${result} = Olá Rodney, Bem vindo ao curso de Robot Framework!</msg>
+<status status="PASS" starttime="20220918 15:48:59.040" endtime="20220918 15:48:59.040"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220918 15:48:59.040" endtime="20220918 15:48:59.040"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>"Olá Rodney, Bem vindo ao curso de Robot Framework!"</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20220918 15:48:59.040" level="FAIL">Olá Rodney, Bem vindo ao curso de Robot Framework! != "Olá Rodney, Bem vindo ao curso de Robot Framework!"</msg>
+<status status="FAIL" starttime="20220918 15:48:59.040" endtime="20220918 15:48:59.040"/>
+</kw>
+<status status="FAIL" starttime="20220918 15:48:59.040" endtime="20220918 15:48:59.040">Olá Rodney, Bem vindo ao curso de Robot Framework! != "Olá Rodney, Bem vindo ao curso de Robot Framework!"</status>
+</test>
+<status status="FAIL" starttime="20220918 15:48:59.009" endtime="20220918 15:48:59.040"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
